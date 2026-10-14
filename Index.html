@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECH FUTURE | Science Innovations</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #070b18;
+  color: white;
+}
+
+nav {
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0c1224;
+  border-bottom: 1px solid #253653;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00e5ff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #00e5ff;
+}
+
+.hero {
+  min-height: 75vh;
+  padding: 90px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle at 80% 20%, #19346a, #070b18 55%);
+}
+
+.tag {
+  color: #00e5ff;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(42px, 8vw, 76px);
+  line-height: 1.1;
+}
+
+h1 span {
+  color: #00e5ff;
+}
+
+.hero p {
+  max-width: 550px;
+  color: #b8c4dc;
+  line-height: 1.8;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 14px 22px;
+  border-radius: 6px;
+  background: #00e5ff;
+  color: #07101b;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px #00e5ff80;
+}
+
+section {
+  padding: 70px 8%;
+}
+
+.title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #aab8d0;
+  text-align: center;
+  margin-bottom: 35px;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #141f37, #0b1121);
+  border: 1px solid #253653;
+  border-radius: 14px;
+  padding: 28px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: #00e5ff;
+  box-shadow: 0 10px 30px #00e5ff15;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #00e5ff;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #b8c4dc;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.about {
+  text-align: center;
+  background: #0c1224;
+}
+
+.about p {
+  max-width: 650px;
+  margin: 20px auto 28px;
+  color: #b8c4dc;
+  line-height: 1.8;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #8d9ab2;
+  border-top: 1px solid #253653;
+  font-size: 13px;
+}
+
+@media(max-width: 600px) {
+  nav {
+    padding: 18px 5%;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  nav a {
+    margin-left: 7px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 75px 6%;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">TECH FUTURE</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#innovations">Innovations</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="tag">SCIENCE • TECHNOLOGY • TOMORROW</div>
+
+  <h1>Imagine <span>Tomorrow.</span><br>Innovate Today.</h1>
+
+  <p>
+    Welcome to the future of technology.
+    Discover scientific innovations, artificial intelligence,
+    robotics and the technologies transforming our world.
+  </p>
+
+  <a href="#innovations" class="btn">Explore Innovations →</a>
+</header>
+
+<section id="innovations">
+  <h2 class="title">Explore The Future</h2>
+  <p class="subtitle">
+    Discover the ideas and innovations shaping tomorrow.
+  </p>
+
+  <div class="cards">
+
+    <article class="card">
+      <div class="icon">🤖</div>
+      <h3>Artificial Intelligence</h3>
+      <p>Discover how AI helps computers learn, solve problems and assist people.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">⚙️</div>
+      <h3>Robotics</h3>
+      <p>Explore intelligent robots used in industries, research and everyday life.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🚀</div>
+      <h3>Space Technology</h3>
+      <p>Explore rockets, satellites, planets and space exploration missions.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">⚡</div>
+      <h3>Green Energy</h3>
+      <p>Learn how solar power and wind energy can support a sustainable future.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🧬</div>
+      <h3>Biotechnology</h3>
+      <p>Discover how biology and technology combine to advance scientific research.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🏙️</div>
+      <h3>Smart Cities</h3>
+      <p>Explore intelligent transport, connected infrastructure and efficient buildings.</p>
+    </article>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="title">The Future Starts Today</h2>
+
+  <p>
+    Technology is more than machines. It is the power of human creativity,
+    scientific discovery and ideas that can improve our world.
+    Let's explore tomorrow, one innovation at a time.
+  </p>
+
+  <a href="#home" class="btn">Back to Top ↑</a>
+</section>
+
+<footer>
+  © 2026 TECH FUTURE | Science & Innovation
+  <br><br>
+  Imagine Tomorrow. Innovate Today.
+</footer>
+
+</body>
+</html>
