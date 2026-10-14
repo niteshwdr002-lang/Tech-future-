@@ -200,6 +200,40 @@ body {
     background-color: #f4eaff;
   }
   }
+  /* Automatic colour animation for buttons */
+.btn {
+  animation: buttonColor 12s ease-in-out infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+@keyframes buttonColor {
+  0%, 100% {
+    background-color: #7CFC9A;
+  }
+  33% {
+    background-color: #87CEEB;
+  }
+  66% {
+    background-color: #B57EDC;
+  }
+}
+
+/* Slowly changing card borders */
+.card {
+  animation: borderColor 12s ease-in-out infinite;
+}
+
+@keyframes borderColor {
+  0%, 100% {
+    border-color: #7CFC9A;
+  }
+  33% {
+    border-color: #87CEEB;
+  }
+  66% {
+    border-color: #B57EDC;
+  }
+    }
 </style>
 </head>
 
